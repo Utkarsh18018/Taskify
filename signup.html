@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Your Website</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js" defer></script>
+</head>
+<body>
+    <div class="background-image">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Logo -->
+                <div class="navbar-logo">
+                    <a href="landingpage.html" class="logo-link">Taskify</a>
+                </div>
+    
+                <!-- Menu Items -->
+                <ul class="navbar-menu">
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="#">Find Freelancers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- Mobile Menu Icon (Hamburger) -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+       
+        <div class="signup-container">
+            <button type="button" id="closebutton">&times;</button>
+            <h2>Sign Up</h2>
+            <form action="#" method="POST" id="signup-form">
+                
+                <!-- User Role Selection -->
+                <div class="role-selection">
+                    <label for="user-role">Select Role</label>
+                    <select id="user-role" name="user-role" required>
+                        <option value="">--Select Role--</option>
+                        <option value="admin">Admin</option>
+                        <option value="worker">Freelancer</option>
+                        <option value="employer">Employer</option>
+                    </select>
+                </div>
+                <!-- Full Name Input -->
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <!-- Username Input -->
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <!-- Email Input -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- Password Input -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <!-- Confirm Password Input -->
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <!-- Terms and Conditions Checkbox -->
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" id="terms" required> I agree to the <a href="#">Terms and Conditions</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                
+                <p class="login">Already have an account? <a href="userselection.html">Login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

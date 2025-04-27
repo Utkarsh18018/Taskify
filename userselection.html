@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Your Website</title>
+    <link rel="stylesheet" href="userselection.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a href="landingpage.html" class="logo-link">Taskify</a>
+            </div>
+
+            <!-- Menu Items -->
+            <ul class="navbar-menu">
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="#">Browse Jobs</a></li>
+                <li><a href="#">Find Freelancers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Icon (Hamburger) -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="background-image">
+        <div class="login-container">
+            <!-- Close Button -->
+            <button type="button" id="closebutton" class="close-btn">&times;</button>
+            
+            <h2>Login</h2>
+            <form action="#" method="POST" id="login-form">
+                <!-- User Role Selection -->
+                <div class="role-selection">
+                    <label for="user-role">Select Role</label>
+                    <select id="user-role" name="user-role" required>
+                        <option value="">--Select Role--</option>
+                        <option value="admin">Admin</option>
+                        <option value="worker">Freelancer</option>
+                        <option value="employer">Employer</option>
+                    </select>
+                </div>
+                
+                <!-- Username and Password Inputs -->
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <!-- Remember Me and Forgot Password Links -->
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox" id="remember"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="btn">Login</button>
+                
+                <p class="signup">Don't have an account? <a href="signup.html">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="userselection.js"></script>
+</body>
+</html>

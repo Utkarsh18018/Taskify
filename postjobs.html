@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - Taskify</title>
+    <link rel="stylesheet" href="postjobs.css">
+    <script src="postjobs.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a href="landingpage.html" class="logo-link">Taskify</a>
+            </div>
+
+            <!-- Menu Items -->
+            <ul class="navbar-menu">
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="browsejobs.html">Browse Jobs</a></li>
+                <li><a href="postjobs.html">Find Freelancers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+
+
+            <!-- Mobile Menu Icon (Hamburger) -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="post-container">
+        <header class="post-header">
+            <h1>Post a Job</h1>
+            <p>Reach out to the best talent for your projects</p>
+        </header>
+
+        <form class="post-form" id="postJobForm">
+            <div class="input-group">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+            </div>
+
+            <div class="input-group">
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+
+            <div class="input-group">
+                <label for="skills">Required Skills</label>
+                <input type="text" id="skills" name="skills" required>
+            </div>
+
+            <button type="submit" class="post-btn">Post Job</button>
+        </form>
+    </div>
+</body>
+</html>

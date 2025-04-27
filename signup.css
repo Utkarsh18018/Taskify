@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling on the whole page */
+}
+
+.background-image {
+    background-image: url('pexels-photo-1103970.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.signup-container {
+    background: rgba(255, 255, 255, 0.2); /* Frosted glass effect */
+    backdrop-filter: blur(10px); /* Optional: Adds blur for frosted effect */
+    padding: 30px;
+    width: 100%;
+    max-width: 450px; /* Set the maximum width of the container */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for better contrast */
+    margin: 20px;
+    max-height: 80vh; /* Limit the height to 80% of the viewport height */
+    overflow-y: auto; /* Allows scrolling inside the container if needed */
+    margin-top: 110px;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600; /* Increased weight for better visibility */
+}
+
+.input-group, .role-selection, .terms {
+    margin-bottom: 18px; /* Adjusted margin for spacing */
+}
+
+.input-group label, .role-selection label, .terms label {
+    color: white;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 500; /* Made label slightly bolder */
+}
+
+.input-group input, .role-selection select {
+    width: 100%;
+    padding: 12px; /* Increased padding for better input fields */
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease; /* Add transition on focus */
+}
+
+.input-group input:focus, .role-selection select:focus {
+    background-color: rgba(255, 255, 255, 0.6); /* Change background on focus */
+}
+
+.terms {
+    margin-bottom: 30px; /* Larger margin at the bottom of terms section */
+}
+
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px; /* Increased padding for a more clickable button */
+    font-size: 1.1rem;
+    background-color: #007e33;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Adds space between button and next section */
+}
+
+.btn:hover {
+    background-color:#00c851;
+}
+
+.login {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.login a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+#closebutton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    }
+        /* Navbar Menu */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin-right: 30px;
+}
+
+.navbar-menu li {
+    position: relative;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #00c851;
+}
+
+/* Call-to-Action Button */
+.navbar-cta .cta-btn {
+    padding: 0.6rem 1.4rem;
+    background-color: #007e33;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+.navbar-cta .cta-btn:hover {
+    background-color: #00c851;
+}
+
+/* Mobile Menu (Hamburger Icon) */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .navbar-menu li {
+        text-align: center;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar-cta {
+        display: none;
+    }
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+/* Logo */
+.navbar-logo .logo-link {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-right: 110px;
+}
+
+.navbar-logo .logo-link:hover {
+    color: #00c851;
+    transition: color 0.3s ease;
+}
